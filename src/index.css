@@ -1,0 +1,81 @@
+:root {
+  --fuentePrincipal: 'Lato', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /*(Modelo caja)Hace que cuando definamos un 
+  alto y ancho para todo elemento caja siempre se quede eso a pesar de 
+  cambiar valores como el padding, border o margin al elemento*/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; /*Aplica el modelo caja a todos los elementos del
+  HTML*/
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuentePrincipal);
+  font-size: 3rem;
+  width: 100%;
+}
+
+/* Globales*/
+
+* {
+  scroll-behavior: smooth;
+}
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+/* Principal */
+
+.principal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos quoteBox */
+
+.quoteBox {
+  background-color: white;
+  max-width: 80rem;
+  height: auto;
+  display: grid;
+  justify-items: flex-end;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.container-quoteAndAuthor {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.buttonNextQuote {
+  border-radius: 500px;
+  cursor: pointer;
+  font-size: 5rem;
+  height: 5rem;
+  width: 5rem;
+  margin: 2rem;
+}
+
+.bx-chevron-right {
+  color: white;
+}
