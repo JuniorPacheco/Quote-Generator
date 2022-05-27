@@ -1,8 +1,7 @@
 import { useState } from "react"
 import QuoteText from "./QuoteText"
 
-const Quote = ({randomQuote, randomColor}) => {
-  const [color, setColor] = useState(randomColor());
+const Quote = ({randomQuote, randomColor, color, setColor}) => {
   const [quoteText, setQuoteText] = useState(randomQuote())
 
   

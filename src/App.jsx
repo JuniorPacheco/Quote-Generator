@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import QuoteBox from './components/QuoteBox'
 import quotes from './json/quotes.json'
 function App() {
@@ -15,9 +16,11 @@ function App() {
     return colors[randomIndex(colors)]
   }
 
+  const [color, setColor] = useState(randomColor());
+
   return (
     <main className="principal" style={{backgroundColor: color}}>
-      <QuoteBox randomQuote={randomQuote} randomColor={randomColor}/>
+      <QuoteBox randomQuote={randomQuote} randomColor={randomColor} color={color} setColor={setColor}/>
     </main>
   )
 }
