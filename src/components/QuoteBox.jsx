@@ -4,6 +4,7 @@ import QuoteText from "./QuoteText"
 const Quote = ({randomQuote, randomColor, color, setColor}) => {
   const [quoteText, setQuoteText] = useState(randomQuote())
 
+  
   return (
     <article className="quoteBox">
       <QuoteText quoteText={quoteText.quote} color={color}/>
